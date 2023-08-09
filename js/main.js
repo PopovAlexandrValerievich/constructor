@@ -32,6 +32,7 @@ $(document).ready(function (){
         $('#image-scaling__btn, #image-rotate__btn, #image-drag__btn')
             .prop('disabled', true);
 
+        $('body').css('touch-action', 'auto');
         $('#image').css('border', 'solid black 2px');
         $('.image__wrapper').css('resize', 'horizontal');
     });
