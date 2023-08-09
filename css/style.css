@@ -43,3 +43,18 @@ body{
     border-radius: 50%;
     display: none;
 }
+.image-constructor__scale-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    background-image: url("../images/scaling_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none;
+}

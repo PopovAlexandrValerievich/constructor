@@ -34,8 +34,11 @@ $(document).ready(function (){
 
         $('body').css('touch-action', 'auto');
         $('#image').css('border', 'solid black 2px');
-        $('.image__wrapper').css('resize', 'horizontal');
+         $('.image__wrapper').css('resize', 'horizontal');
     });
+    
+    
+
 
     /* Rotate image function */
     $('#image-rotate__btn').click(function () {
