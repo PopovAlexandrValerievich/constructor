@@ -42,7 +42,7 @@ $(document).ready(function (){
         /* Turning off the buttons */
         $('#image-scaling__btn, #image-rotate__btn, #image-drag__btn')
             .prop('disabled', true);
-
+        $('body').css('touch-action', 'none');
         imageWrapper.css('overflow', 'inherit');
         image.css('border', 'solid black 2px');
         $('#rotate__btn').show();
