@@ -1,0 +1,45 @@
+body{
+    touch-action: none
+}
+
+.image__wrapper {
+    position: relative;
+    max-width: max-content;
+    resize: none;
+    overflow: hidden;
+    padding-right: 3px;
+}
+
+.image__wrapper > img {
+    width: 100%;
+}
+
+.image__wrapper::-webkit-resizer:hover {
+    cursor: pointer;
+}
+
+.image__wrapper::-webkit-resizer {
+    pointer-events: none;
+    background-image: url("../images/scaling_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.image-constructor__rotate-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    background-image: url("../images/rotate_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<form action="doimg.php" method="POST" enctype="multipart/form-data" >
+    <input type="file" id="image__input" name="file">
+    <input id="width" type="number">
+    <input id="height" type="number">
+    <input id="pageY" type="number">
+    <input id="pageX" type="number">
+  	<button type="submit">send</button>
+</form>
+
+
+<div class="image__constructor">
+    <div class="image-constructor__btns">
+        <button id="image-scaling__btn">Изменить размер</button>
+        <button id="image-rotate__btn">Повернуть изображение</button>
+        <button id="image-drag__btn">Переместить изображение</button>
+        <button id="image-save__btn" class="image-constructor__save-btn">Готово</button>
+    </div>
+    <div class="image__wrapper">
+        <img src="#" id="image">
+        <button id="rotate__btn" class="image-constructor__rotate-btn"></button>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/jquery-ui-1.13.2.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+</body>
+</html>
